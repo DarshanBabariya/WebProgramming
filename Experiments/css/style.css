@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head {
+    background-color: #154360 ;
+    display: inline-block;
+    width: 100%;
+}
+.head img{
+    float: left;
+    position: relative;
+    width: 100px;
+    left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.head h1{
+    position: relative;
+    top: 18px;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+    letter-spacing: 1px;
+}
+.main {
+    padding-top: 10px;
+}
+.main h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #154360;
+    text-shadow: 1px 1px 1px #000;
+}
+.main hr {
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: red;
+}
+.detail {
+    border: 2px solid black;
+    margin: 20px;
+    height: 70vh; overflow: auto;
+}
+.detail table {
+    width: 100%; 
+}
+.detail table tr th {
+    font-size: 25px;
+    text-align: center;
+    background-color:rgb(167, 8, 8);
+    color: #FFF;
+    position: sticky;
+    top: 0;
+}
+th, td {
+    padding: 20px;
+}
+.detail table tr td {
+    font-size: 20px;
+    text-align: center;
+}
+.detail table tr:nth-child(odd){
+    background-color: rgba(252, 72, 72, 0.315);
+}
+.detail table tr td a {
+    color: red;
+    text-decoration: none;
+    animation: changecolorfrd 1s infinite;
+}
+    @keyframes changecolorfrd{
+        0%{color: red;}
+        25%{color:#154360;}
+        50%{color: red;}
+        75%{color: #154360;}
+        100%{color:red;}
+    }
+footer {
+    background-color: #000;
+    color: rgb(216, 210, 210); 
+    padding-bottom: 150px;
+}
+.personal {
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+#enroll {
+    float: left;
+    position: relative;
+    left: 20px;
+    padding-top: 30px;
+}
+#devlop {
+    position: relative;
+    float: right;
+    padding-top: 30px;
+    right: 30px;
+}
+#devlop span {
+    color: red;
+    font-size: 22px;
+}
+.copyright p{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
