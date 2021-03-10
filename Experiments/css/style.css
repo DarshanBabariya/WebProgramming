@@ -112,3 +112,17 @@ footer {
     font-size: 22px;
     letter-spacing: 1px;
 }
+span{
+    color: blue;
+    animation: changecolornew 1s infinite;
+    font-weight: bold;
+    margin-left: 25px;
+}
+    @keyframes changecolornew{
+        0%{color: red;}
+        50%{color: black}
+        100%{color:blue;}
+       
+
+    }
+
