@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1> Dice Game </h1>
+        <h2> _._._._._._._._._._ </h2>
+        <div class="dice">
+            <p class="p1">Player 1</p>
+            <img class="img1" src="images/dice1.png" alt="dice">
+        </div>
+
+        <div class="dice">
+            <p class="p2">Player 2</p>
+            <img class="img2" src="images/dice1.png" alt="dice">
+        </div>
+    </div>
+
+    <div class="container bottom">
+        <button type="button" class="btn" onclick="rollDice()"> Roll The Dice </button>
+    </div>
+
+    <div class="my-info" style="margin:5px">
+        <h3>Name : Darshan Babariya</h3>
+        <h3>Enrollment : 180020107001</h3>
+    </div>
+    <script>
+        function rollDice() {
+                var randomNumber1 = Math.floor(Math.random() * 6) + 1; 
+                var randomNumber2 = Math.floor(Math.random() * 6) + 1; 
+
+                document.querySelector(".img1").setAttribute("src", 
+                    "images/dice" + randomNumber1 + ".png"); 
+
+                document.querySelector(".img2").setAttribute("src", 
+                    "images/dice" + randomNumber2 + ".png"); 
+
+                if (randomNumber1 == randomNumber2) {
+                    document.querySelector("h2").innerHTML = "It's DRAW.!!";
+                }
+                else if(randomNumber1 < randomNumber2){
+                    document.querySelector("h2").innerHTML = "Player 2 WIN.!!";
+                }
+                else {
+                    document.querySelector("h2").innerHTML = "Player 1 WIN.!!";
+                }
+        }
+    </script>
+</body>
+</html>
