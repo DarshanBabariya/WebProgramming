@@ -112,7 +112,7 @@ footer {
     font-size: 22px;
     letter-spacing: 1px;
 }
-span{
+td span{
     color: blue;
     animation: changecolornew 1s infinite;
     font-weight: bold;
