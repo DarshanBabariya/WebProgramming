@@ -19,6 +19,7 @@ p {
 }
   .container {
     padding: 50px;
+    margin: 100px;
     background-color: white;
   }
 #name, #email, #phone, #date, #other {

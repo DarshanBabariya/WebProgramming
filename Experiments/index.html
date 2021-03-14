@@ -18,14 +18,21 @@
     </header> 
 
     <section class="main">
+
         <h2>Web Programming Experiments</h2>
         <hr>
 
-        <div class="detail">
+        <div class="navbar"> 
+            
+            <button onclick="showLec()" id="lec_button">Lecture Work</button>
+            <button onclick="showLab()" id="lab_button">Lab Work</button>
+        </div>
+
+        <div class="detail" id="lec">
             <table>
                 <tr>
                     <th> No. </th>
-                    <th> Experiments </th>
+                    <th> Lecture Experiments </th>
                     <th >Answer </th>
                 </tr>
                 <tr>
@@ -50,13 +57,13 @@
                 </tr>
                 <tr>
                     <td> 5. </td>
-                    <td> Create a Dice game <span>new</span></td>
+                    <td> Create a Dice game </td>
                     <td><a href="prectical/Dice Game/index.html" target="_blank"> View </a></td>
                 </tr>
                 <tr>
                     <td> 6. </td>
-                    <td> Design a form for online ticket booking system. <span>new</span></td>
-                    <td><a href="prectical//Form/index.html" target="_blank"> View </a></td>
+                    <td> Design a registration form will all required input types and attributes. <span>new</span></td>
+                    <td><a href="prectical/Form2/index.html" target="_blank"> View </a></td>
                 </tr>
                 <tr>
                     <td> 7. </td>
@@ -80,6 +87,62 @@
                 </tr>
             </table>
         </div>
+
+        <div class="detail" id="lab">
+            <table>
+                <tr>
+                    <th> No. </th>
+                    <th> Lab Experiments </th>
+                    <th >Answer </th>
+                </tr>
+                <tr>
+                    <td> 1.1 </td>
+                    <td> Design a form for online ticket booking system. <span>new</span> </td>
+                    <td><a href="prectical//Form/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 1.2 </td>
+                    <td>  Create a AIT registration form with header, menubar and footer. <span>new</span> </td>
+                    <td><a href="prectical/Registration_Form/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 1.3 </td>
+                    <td> Create a webpage that contain table of employee's details. <span>new</span></td>
+                    <td><a href="prectical/Employee Table/index.html" target="_blank" > View </a></td>
+                </tr>
+                <tr>
+                    <td> 2.1 </td>
+                    <td> Create a webpage that contain table of news employee's details. <span>new</span></td>
+                    <td><a href="prectical/Employee Table/index.html" target="_blank" > View </a></td>
+                </tr>
+                <tr>
+                    <td> 2.2 </td>
+                    <td> Design a webpage for understanding the concept of pseudo classes. <span>new</span></td>
+                    <td><a href="prectical/pseude class/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 2.3 </td>
+                    <td> Design a webpage for table and understanding the concept of link. <span>new</span></td>
+                    <td><a href="prectical/table_hover/index.html" target="_blank"> View </a></td>
+                </tr>
+                <tr>
+                    <td> 6. </td>
+                    <td> </td>
+                    <td><a href=""> View </a></td>
+                </tr>
+                <tr>
+                    <td> 6. </td>
+                    <td> </td>
+                    <td><a href=""> View </a></td>
+                </tr>
+                <tr>
+                    <td> 6. </td>
+                    <td> </td>
+                    <td><a href=""> View </a></td>
+                </tr>
+               
+            </table>
+        </div>
     </section>
 
     <footer>
@@ -91,5 +154,22 @@
             <p> &copy; Copyright Ahmedabad Institute of Technology | CE Department 2021</p>
         </section>
     </footer>
+
+
+    <script>
+        function showLec() {
+            document.getElementById("lec").style.display = "block";
+            document.getElementById("lab").style.display = "none";
+            document.getElementById("lec_button").style.backgroundColor = "#a70808";
+            document.getElementById("lab_button").style.backgroundColor = "#154360";
+
+        }
+        function showLab() {
+            document.getElementById("lab").style.display = "block";
+            document.getElementById("lec").style.display = "none";
+            document.getElementById("lec_button").style.backgroundColor = "#154360";
+            document.getElementById("lab_button").style.backgroundColor = "#a70808";
+        }
+    </script>
 </body>
 </html>

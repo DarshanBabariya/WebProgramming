@@ -9,7 +9,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body> 
 
     <form action="">
         <div class="container">
@@ -18,13 +18,13 @@
             <hr>
             
             <label for="name"><b> Name</b></label>
-            <input type="text" placeholder="Enter Your Name" name="name" id="name">
+            <input type="text" placeholder="Enter Your Name" name="name" id="name" pattern="[A-Za-z]+" required>
 
             <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Yout Email" name="email" id="email">
+            <input type="email" placeholder="Enter Yout Email" name="email" id="email" required>
             
             <label for="email"><b>Phone Number</b></label>
-            <input type="number" placeholder="Enter Yout Phone Number" name="phone" id="phone">
+            <input type="tel" placeholder="Enter Yout Phone Number" name="phone" id="phone" maxlength="10" required>
 
             <label for="form"><b>From</b></label>
             <select id="city" name="city">
@@ -43,7 +43,7 @@
             </select>
             <br>
             <label for="daye"><b>Date </b></label>
-            <input type="date" placeholder="dd/mm/yyyy" name="phone" id="date">
+            <input type="date" placeholder="dd/mm/yyyy" name="phone" id="date" required>
             <br>
             <label for="other"><b>Other</b></label>
             <textarea placeholder="Enter Other Details" name="other" id="other" cols="30" rows="10"></textarea>
@@ -55,5 +55,7 @@
         <h3>Name : Darshan Babariya</h3>
         <h3>Enrollment : 180020107001</h3>
     </div>
+
+
 </body>
 </html>

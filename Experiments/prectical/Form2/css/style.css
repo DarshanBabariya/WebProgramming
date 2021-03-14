@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#1c2e50;
+}
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #1c2e50;
+}
+.container {
+    padding: 100px;
+    margin: 100px;
+    background-color: white;
+}
+label {
+    font-size: 16px;
+}
+#fname, #lname, #email, #current_add, #permanent_add, #pwd {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0 22px 0;
+    display: inline-block;
+    border: 2px solid #1c2e50;
+    background: #f1f1f1;
+}
+#male, #female, #other, #hobby1, #hobby2, #hobby3, #current_same{
+    margin: 15px;
+}
+#approve {
+    font-size: 18px;
+    margin: 25px auto;
+}
+a {
+    color: black;    
+}  
+hr {
+    border: 2px solid #1c2e50;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+}
+  
+#reset, #submit {
+    background-color: #1c2e50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.9;
+    font-size: 20px;
+  }
+  
+  #reset:hover, #submit:hover {
+    opacity: 1;
+  }
+  
