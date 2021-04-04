@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f1f1f1;
+}
+h1 {
+    text-align: center;
+    margin: 25px;
+}
+hr {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: black;
+    padding: 2px;
+}
+.main {
+    background: #1c2e50;
+    margin: 50px 200px;
+    height: 70vh;
+}
+#num {
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    margin: 15px 0 22px 0;
+    display: inline-block;
+    border: 2px solid #1c2e50;
+    background: #FFF;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 50px 260px;
+}
+#submit {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    background-color:goldenrod;
+}
+#submit:hover{
+    opacity: .9;
+}
+#series {
+    color: #f1f1f1  ;
+    font-size: 22px;
+    padding: 50px 50px;
+    text-align: center; 
+    height: 65%;
+    overflow: auto;
+  
+}

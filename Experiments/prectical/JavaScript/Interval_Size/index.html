@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Numbers</title>
+    <style>
+        body {
+            background-color:lightsteelblue;
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var var1 = setInterval(inTimer, 1000);
+        var fs = 3;
+        var ids = document.getElementById("demo");
+        function inTimer() {
+            ids.innerHTML = '<b> AHMEDANAD INSTITUTE OF TECHNOLOGY </b>';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: blue;");
+            fs += 3;
+            if(fs >= 50 ){
+            clearInterval(var1);
+            }
+        }
+    </script>
+
+    <div class="my-info" style="margin:0px 20px; color: black; position:absolute; bottom: 0;">
+        <h3>Name : Darshan Babariya</h3>
+        <h3>Enrollment : 180020107001</h3>
+    </div>
+</body>
+</html>
