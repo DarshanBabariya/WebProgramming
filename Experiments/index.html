@@ -175,7 +175,10 @@
             <p id="enroll">Enrollment : 180020107001 </p>
             <p id="devlop">Developed by, <span>Darshan Babariya </span>:)</p>
         </section>
-        
+        <section class="visit">
+            <p>visitors</p>
+            <p id="count"></p>
+        </section>
         <section class="copyright">        
             <p> &copy; Copyright Ahmedabad Institute of Technology | CE Department 2021</p>
         </section>
@@ -196,6 +199,20 @@
             document.getElementById("lec_button").style.backgroundColor = "#154360";
             document.getElementById("lab_button").style.backgroundColor = "#a70808";
         }
+
+        
+            const countEl = document.getElementById('count');
+
+            updateVisitCount();
+
+            function updateVisitCount() {
+                fetch('https://api.countapi.xyz/update/darshan/wep/?amount=1')
+                .then(res => res.json())
+                .then(res => {
+                    countEl.innerHTML = res.value;
+                })
+            }
+        
         
     </script>
 </body>
