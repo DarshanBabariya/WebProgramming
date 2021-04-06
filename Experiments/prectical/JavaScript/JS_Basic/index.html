@@ -28,6 +28,7 @@
             <a href="#math">JS Maths</a>
             <a href="#condition">JS Conditions</a>
             <a href="#loop">JS Loops</a>
+            <a href="#dom">JS HTML-DOM</a>
         </div>
         
         <div class="main">
@@ -482,7 +483,40 @@
                     </script>
                 </div>
             </div>
+            <div id="dom">
+                <div class="title">
+                    <h2>JavaScript HTML - DOM</h2>
+                    <hr>
+                </div>
+                <div class="intro">
+                    <p><b>HTML DOM Methos</b></p>
+                    <p id="dom_demo1"></p>
+                    <p id="dom_demo2"></p><br>
+                    <button id="btn" onclick="dom_wr()"> Click Here </button>
+
+
+                    <script>
+                        {
+                        
+                            document.getElementById("dom_demo1").innerHTML = 
+                                "This is printing using DOM getElementById method and innerHTML property." ;
+                            document.getElementById("dom_demo2").innerHTML =
+                                "This is printing using DOM getElementById method and style property";
+                            document.getElementById("dom_demo2").style.color = "#118d8d";
+
+                            function dom_wr(){
+                            document.write("This is printing using write() method.");
+                            }
+                        }
+                    </script>
+                    
+                </div>
+            </div>
+            <div id="none" style="padding-bottom: 100px;">
+
+            </div>
         </div>
     </div>
+
 </body>
 </html>
